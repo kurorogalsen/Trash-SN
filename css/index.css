@@ -1,0 +1,250 @@
+#head{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    transition: 0.4s ease-in-out;
+}
+.head-scroll-down{
+    opacity: 0;
+}
+.head-scroll-up{
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+#logo, #logo-mobile{
+    border-radius: 100%;
+    width: 75px;
+    margin: 15px;
+    margin-right: 100px;
+    border: 2px solid var(--secondary-color);
+}
+nav>ul>li{
+    list-style: none;
+    margin: 15px;
+}
+a{
+    transition: 0.35s ease-in-out;
+}
+a:hover{
+    color: var(--secondary-color);
+}
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    text-shadow: 0px 0px 5px black;
+    font-size: 1em;
+    margin: 15px;
+    transition: 0.35s ease-in-out;
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+}
+.btn-secondary:hover{
+    box-shadow: 0px 0px 5px var(--text-color);
+}
+#main{
+    min-height: 100vh;
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#main>h1>div:nth-child(1){
+    font-size: 2.2em;
+}
+#main>h1>div:nth-child(2){
+    font-size: 3.5em;
+    color: var(--secondary-color);
+}
+#main>h1>div:nth-child(3){
+    font-size: 1.7em;
+}
+#pop{
+    position: fixed;
+    background-color: var(--secondary-color);
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: var(--primary-color);
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+    z-index: 70;
+}
+#pop>img{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+#mobile-head{
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    display: none;
+    z-index: 200;
+}
+#logo-mobile{
+    width: 40px;
+    margin: 5px 5px 5px 5px;
+}
+#exit-mobile{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    cursor: pointer;
+}
+#hamburger-menu{
+    margin: 10px;
+    cursor: pointer;
+}
+#second-section{
+    position: relative;
+    padding: 25px;
+    z-index: 10;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#second-section>*{
+    z-index: 10;
+}
+.head-section>*{
+    margin: 10px;
+}
+h2{
+    font-size: 1.7em;
+}
+.foot-section{
+    margin: 25px;
+}
+.foot-section>*{
+    margin: 10px;
+}
+.foot-section>h2{
+    font-size: 1.7em;
+}
+#second-section>div:nth-child(2){
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+.card{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 15px;
+    font-size: 1.5em;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 5px 10px white;
+    transform: translateY(-10px);
+}
+.pin{
+    margin: 10px;
+}
+.pin>h3{
+    border-bottom: 1px solid var(--text-color);
+    margin: 10px;
+    
+}
+.foot-section>img{
+    margin-bottom: 35px;
+}
+#second-section::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 75%;
+    background-color: rgb(14, 35, 80);
+    border-radius: 70% 30% 70% 30%;
+    z-index: 0;
+}
+#propos{
+    padding: 50px 0px 50px 0px;
+    background-image: url("../images/flou-trash-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: start;
+}
+#propos>h2{
+    margin: 15px;
+    margin-bottom: 55px;
+}
+#propos>div>p{
+    font-size: 1.7em;
+}
+footer{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+footer>div>a{
+    margin: 10px;
+}
+footer>div:last-child{
+    margin: 30px 0px 5px 0px;
+}
+@media screen and (max-width: 1200px) {
+    #head{
+        display: none;
+    }
+    #mobile-head{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        display: flex;
+    }
+    #mobile-head>nav{
+        background-color: var(--primary-color);
+        height: 100vh;
+        position: absolute;
+        top: 0%;
+        left: -100%;
+        z-index: 50;
+        transition: 0.4s ease-in-out;
+    }
+    #second-section::before{
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 0%;
+        background-color: rgb(14, 35, 80);
+        border-radius: 70% 30% 70% 30%;
+        z-index: 0;
+    }
+    #propos>div>p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    #main>h1>div:nth-child(1){
+        font-size: 1.2em;
+    }
+    #main>h1>div:nth-child(2){
+        font-size: 1.9em;
+        color: var(--secondary-color);
+    }
+    #main>h1>div:nth-child(3){
+        font-size: 0.9em;
+    }
+    .pin{
+        margin: 5px;
+    }
+    .pin>h3{
+        border-bottom: 1px solid var(--text-color);
+        margin: 5px;
+        font-size: 0.8em;
+    }
+    #propos>div>p{
+        font-size: 1em;
+    }
+}

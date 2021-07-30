@@ -4,11 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="description" content="Débarassez-vous de vos déchets grace à Trash SN">
+
+    <meta property="og:image" content="images/logo.jpeg">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Débarassez-vous de vos déchets grace à Trash SN">
+    <meta property="og:locale" content="sn_SN">
+    <meta property="og:title" content="Débarassez-vous de vos déchets grace à Trash SN">
+
+    <meta property="twitter:image" content="images/logo.jpeg">
+    <meta property="twitter:description" content="Débarassez-vous de vos déchets grace à Trash SN">
+    <meta property="twitter:title" content="Débarassez-vous de vos déchets grace à Trash SN">
+
+    
     <link rel="stylesheet" href="css/starter.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Trash SN</title>
 </head>
-<body>
-    
+<body class="container column">
+    <header  class="container row-between" id="mobile-head">
+        <img width="40" src="icons/menu.png" id="hamburger-menu">
+        <a href="#main"><img src="images/logo.jpeg" alt="Trash SN" id="logo-mobile"></a>
+        
+        <nav class="column">
+            <img id="exit-mobile" width="35" src="icons/exit-white.png" alt="exit">
+            <ul class="column">
+                <li><a href="#main">ACCUEIL</a></li>
+                <li><a href="#mission">MISSIONS</a></li>
+                <li><a href="#zone">ZONES D'ACTION</a></li>
+                <li><a href="#propos">À PROPOS</a></li>
+            </ul>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><button class="btn btn-secondary">CONTACTEZ NOUS</button></a>
+        </nav>
+    </header>
+    <header class="container row" id="head">
+        <nav class="col-10 row-between">
+            <a href="#main"><img src="images/logo.jpeg" alt="Trash SN" id="logo"></a>
+            <ul class="row">
+                <li><a href="#main">ACCUEIL</a></li>
+                <li><a href="#mission">MISSIONS</a></li>
+                <li><a href="#zone">ZONES D'ACTION</a></li>
+                <li><a href="#propos">À PROPOS</a></li>
+            </ul>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><button class="btn btn-secondary">CONTACTEZ NOUS</button></a>
+        </nav>
+    </header>
+
+    <main class="container column">
+        <section class="container column" id="main">
+            <h1>
+                <div>SE DÉBARRASSER DE</div>
+                <div>SES DÉCHETS</div>
+                <div>N'EST PLUS UN PROBLÈME</div>
+                <div>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><button class="btn btn-secondary">CONTACTEZ NOUS</button></a>
+                </div>
+            </h1>
+
+            <div id="pop" class="container row">
+                <p>Le lancement est prévu pour le 1er Septembre 2021 🚀</p>
+                <img width="25" src="icons/exit.png" alt="exit icon">
+            </div>
+        </section>
+
+        <section class="col-12 col-md-10 column" id="second-section">
+            <div class="head-section column" id="mission">
+                <h2>NOS MISSIONS</h2>
+                <img width="50" src="icons/mission.png" alt="mission">
+            </div>
+            <div class="row">
+                <div class="card col-10 col-sm-5 col-lg-3">MODERNISER LE DOMAINE DE LA COLLECTE D'ORDURE</div>
+                <div class="card col-10 col-sm-5 col-lg-3">SENSIBILISER LES POPULATIONS</div>
+                <div class="card col-10 col-sm-5 col-lg-3">FACILITER LE DÉVELOPPEMENT DURABLE</div>
+            </div>
+            <div class="foot-section column" id="zone">
+                <h2>ZONES D'ACTION</h2>
+                <img width="75" src="icons/all-map-pin.png" alt="pin map all">
+                <div class="column">
+                    <div class="row">
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>DAKAR-PLATEAU</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>ALMADIES</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>FANN RÉSIDENCE</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>MAMELLES</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>MARISTES</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>MERMOZ</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>POINT E</h3>
+                        </div>
+                        <div class="column pin">
+                            <img width="40" src="icons/map-pin.png" alt="map-pin">
+                            <h3>SACRÉ-COEUR</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="propos" class="container column">
+            <h2>À PROPOS</h2>
+            <div class="row col-12 col-md-10">
+                <p class="col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                    Nous sommes une nouvelle entreprise opérant dans le secteur de l'assainissement par la collecte des déchets au niveau des ménages, des restaurants, des entreprises et des hôpitaux. Nous aspirons à devenir la référence à coté de l'UCG dans le secteur de l'assainissement et le domaine de la collecte des ordures au Sénégal d'ici l'horizon 2027 grace à notre rigueur et nos valeurs que sont le professionnalisme, le respect de l'environnement et la proximité avec la clientèle.
+                </p>
+                <img class="col-2" src="icons/mr-trash.png" alt="Trash SN">
+            </div>
+        </section>
+    </main>
+
+    <footer class="container column" id="contact">
+        <div class="row">
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><img width="25" src="icons/whatsapp.png" alt="WhatsApp"></a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><img width="25" src="icons/facebook.png" alt="facebook"></a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=221772787178"><img width="25" src="icons/twitter.png" alt="twitter"></a>
+        </div>
+        <div class="row">
+            Tel: 772787178 / 771357301
+        </div>
+        <div class="row">
+            Mail: Trashsn221@gmail.com            
+        </div>
+        <div class="row">
+            Ce site a été conçu et déployé par la @Galsen Digital Agency 🚀         
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
