@@ -17,7 +17,7 @@ document.querySelector("#exit-mobile").addEventListener("click", () => {
 const header = document.getElementById("head");
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY > 500){
+    if(window.scrollY > 200){
         header.classList.add("head-scroll-up");
     }
     else{
